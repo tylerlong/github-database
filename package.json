@@ -4,6 +4,8 @@
     "test": "ts-node ./src/index.ts"
   },
   "dependencies": {
+    "@octokit/core": "^3.5.1",
+    "@octokit/plugin-rest-endpoint-methods": "^5.13.0",
     "axios": "^0.24.0"
   },
   "devDependencies": {
