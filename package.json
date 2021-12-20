@@ -3,6 +3,9 @@
   "scripts": {
     "test": "ts-node ./src/index.ts"
   },
+  "dependencies": {
+    "axios": "^0.24.0"
+  },
   "devDependencies": {
     "@types/node": "^17.0.1",
     "gts": "^3.1.0",
