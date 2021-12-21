@@ -4,9 +4,9 @@ import {restEndpointMethods} from '@octokit/plugin-rest-endpoint-methods';
 const MyOctokit = Octokit.plugin(restEndpointMethods);
 const octokit = new MyOctokit({auth: process.env.GH_TOKEN});
 
-const owner = 'tylerlong';
-const repo = 'github-database';
-const release_id = 55697422;
+const owner = process.env.GH_OWNER!;
+const repo = process.env.GH_REPO!;
+const release_id = parseInt(process.env.GH_RELEASE_ID!);
 
 const main = async () => {
   // get release
@@ -35,7 +35,7 @@ const main = async () => {
     owner,
     repo,
     release_id,
-    name: 'hello.txt',
+    name: 'hello2.txt',
     data: 'world',
   });
   console.log(JSON.stringify(r2, null, 2));
