@@ -34,8 +34,8 @@ class GistS3 {
     return r.data.files?.[filename]?.content;
   }
 
-  async clear() {
-    // todo: clear old files
+  async delete(filename: string) {
+    await this.put(filename, '');
   }
 }
 

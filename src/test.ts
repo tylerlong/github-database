@@ -9,6 +9,7 @@ const main = async () => {
   await gistS3.put('hello.txt', 'world');
   const content = await gistS3.get('hello.txt');
   console.log(content);
+  await gistS3.delete('hello.txt');
 };
 
 main();
