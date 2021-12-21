@@ -1,11 +1,12 @@
 {
   "license": "MIT",
   "scripts": {
-    "test": "ts-node -r dotenv-override-true/config ./src/index.ts"
+    "test": "ts-node -r dotenv-override-true/config ./src/test.ts"
   },
   "dependencies": {
     "@octokit/core": "^3.5.1",
-    "@octokit/plugin-rest-endpoint-methods": "^5.13.0"
+    "@octokit/plugin-rest-endpoint-methods": "^5.13.0",
+    "hyperid": "^2.3.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.1",

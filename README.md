@@ -3,8 +3,7 @@
 Use GitHub Releases as databases.
 
 
-## How to find release id?
+## How does it work?
 
-In browser, try to edit a release, and watch the network traffic.
-
-There will be a request to `check?tag_name=default`, the response includes the release id.
+It works as a key value store. Whenever you try to write `key=value`, the library will upload a file named `key.txt` with content `value` to a GitHub release.
+If the file already exists, it will be replaced.
