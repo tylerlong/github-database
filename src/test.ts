@@ -6,7 +6,7 @@ const gistS3 = new GistS3({
 });
 
 const main = async () => {
-  await gistS3.put('hello.txt', 'world8');
+  await gistS3.put('hello.txt', 'world');
   const content = await gistS3.get('hello.txt');
   console.log(content);
 };

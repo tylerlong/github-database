@@ -33,6 +33,10 @@ class GistS3 {
     });
     return r.data.files?.[filename]?.content;
   }
+
+  async clear() {
+    // todo: clear old files
+  }
 }
 
 export default GistS3;

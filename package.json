@@ -1,12 +1,16 @@
 {
   "license": "MIT",
+  "name": "gist-s3",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "types": "build.index.d.ts",
   "scripts": {
-    "test": "ts-node -r dotenv-override-true/config ./src/test.ts"
+    "test": "ts-node -r dotenv-override-true/config ./src/test.ts",
+    "prepublishOnly": "tsc"
   },
   "dependencies": {
     "@octokit/core": "^3.5.1",
-    "@octokit/plugin-rest-endpoint-methods": "^5.13.0",
-    "hyperid": "^2.3.1"
+    "@octokit/plugin-rest-endpoint-methods": "^5.13.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.1",
